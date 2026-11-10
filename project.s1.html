@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="boostrap css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/all.min.css">
+</head>
+<body>
+    
+<section class="projects-section" id="projects">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <p class="project-subtitle">MY CREATIVE WORK</p>
+      <h2 class="project-heading">
+        My <span>Projects.</span>
+      </h2>
+      <p class="project-description">
+        Explore some of my recent projects,
+        creative designs and web applications.
+      </p>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="project-filters text-center mb-4">
+      <button class="project-filter active"
+        data-filter="all">
+        <i class="fas fa-th-large"></i> All
+      </button>
+
+      <button class="project-filter"
+        data-filter="web">
+        <i class="fas fa-laptop-code"></i> Websites
+      </button>
+
+      <button class="project-filter"
+        data-filter="javascript">
+        <i class="fas fa-code"></i> JavaScript
+      </button>
+
+      <button class="project-filter"
+        data-filter="design">
+        <i class="fas fa-palette"></i> Designs
+      </button>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="project-search-box mx-auto mb-5">
+      <i class="fas fa-search"></i>
+      <input type="search" id="projectSearch"
+        placeholder="Search my projects..."
+        aria-label="Search projects">
+    </div>
+
+    <!-- PROJECT CARDS -->
+    <div class="row g-4" id="projectContainer">
+
+      <!-- PROJECT 1 -->
+      <div class="col-lg-4 col-md-6 project-item"
+        data-category="web">
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="image/Portfolio project image.png"
+              alt="Portfolio website">
+            <span class="project-tag">Website</span>
+          </div>
+
+          <div class="project-info">
+            <h4>Portfolio Website</h4>
+            <p>
+              A modern responsive portfolio
+              built with HTML, CSS and Bootstrap.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-demo">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-source">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="col-lg-4 col-md-6 project-item"
+        data-category="web">
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="image/E-commerce image.png"
+              alt="E-commerce website">
+            <span class="project-tag">Website</span>
+          </div>
+
+          <div class="project-info">
+            <h4>E-Commerce Website</h4>
+            <p>
+              A responsive shopping website
+              with product cards and categories.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-demo">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-source">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="col-lg-4 col-md-6 project-item"
+        data-category="javascript">
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="image/Calculator.png"
+              alt="JavaScript calculator">
+            <span class="project-tag">JavaScript</span>
+          </div>
+
+          <div class="project-info">
+            <h4>JavaScript Calculator</h4>
+            <p>
+              An interactive calculator built
+              using JavaScript functions.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-demo">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-source">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="col-lg-4 col-md-6 project-item"
+        data-category="design">
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="image/Graphics image.png"
+              alt="Graphic design">
+            <span class="project-tag">Design</span>
+          </div>
+
+          <div class="project-info">
+            <h4>Creative Brand Design</h4>
+            <p>
+              A professional visual identity
+              featuring modern branding concepts.
+            </p>
+
+            <div class="project-tech">
+              <span>Branding</span>
+              <span>Graphic Design</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-demo">
+                <i class="fas fa-eye"></i>
+                View Project
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NO RESULTS -->
+    <div id="noProjects" class="text-center mt-5"
+      style="display:none;">
+      <i class="fas fa-folder-open fa-3x mb-3"></i>
+      <h4>No Projects Found</h4>
+      <p>Try searching for another project.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+
+
+<script>
+  // SELECT ELEMENTS
+  const projectButtons =
+    document.querySelectorAll(".project-filter");
+
+  const projectCards =
+    document.querySelectorAll(".project-item");
+
+  const projectSearch =
+    document.getElementById("projectSearch");
+
+  const noProjects =
+    document.getElementById("noProjects");
+
+  let activeCategory = "all";
+
+  // FILTER AND SEARCH FUNCTION
+  function filterProjects() {
+
+    let searchText =
+      projectSearch.value.toLowerCase().trim();
+
+    let visibleCount = 0;
+
+    projectCards.forEach(function(card) {
+
+      let category = card.dataset.category;
+
+      let title = card.querySelector("h4")
+        .textContent.toLowerCase();
+
+      let description = card.querySelector("p")
+        .textContent.toLowerCase();
+
+      let searchMatch =
+        (title + " " + description)
+        .includes(searchText);
+
+      let categoryMatch =
+        activeCategory === "all" ||
+        category === activeCategory;
+
+      if (searchMatch && categoryMatch) {
+        card.style.display = "";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+
+    });
+
+    noProjects.style.display =
+      visibleCount === 0 ? "block" : "none";
+  }
+
+  // FILTER BUTTON EVENTS
+  projectButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+      projectButtons.forEach(function(btn) {
+        btn.classList.remove("active");
+      });
+
+      this.classList.add("active");
+
+      activeCategory = this.dataset.filter;
+
+      filterProjects();
+
+    });
+
+  });
+
+  // LIVE SEARCH
+  projectSearch.addEventListener(
+    "input", filterProjects
+  );
+
+  // TEMPORARY PROJECT LINKS
+  document.querySelectorAll(
+    ".project-links a"
+  ).forEach(function(link) {
+
+    if (link.getAttribute("href") === "#") {
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        alert("Project link coming soon!");
+      });
+
+    }
+
+  });
+</script>
+
+</html>

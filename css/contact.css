@@ -1,0 +1,352 @@
+
+
+/* ===== MATT DAVE CONTACT SECTION ===== */
+
+.matt-contact {
+  background: #0e0b16;
+  color: #fff;
+  padding: 90px 0;
+}
+
+.matt-contact .contact-subtitle {
+  color: #b56cff;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.matt-contact .contact-heading {
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: 800;
+}
+
+.matt-contact .contact-heading span {
+  color: #a855f7;
+}
+
+.matt-contact .contact-description {
+  max-width: 600px;
+  margin: 15px auto;
+  color: #aaa;
+  line-height: 1.8;
+}
+
+/* CONTACT INFORMATION */
+
+.matt-contact .contact-info-wrapper {
+  padding: 15px 0;
+}
+
+.matt-contact .contact-info-wrapper h3 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.matt-contact .contact-intro {
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.matt-contact .contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 18px;
+  background: #1a1425;
+  border: 1px solid #352742;
+  border-radius: 14px;
+  margin-bottom: 17px;
+  transition: 0.35s;
+}
+
+.matt-contact .contact-info-card:hover {
+  transform: translateX(6px);
+  border-color: #a855f7;
+  box-shadow: 0 8px 25px rgba(168,85,247,0.12);
+}
+
+.matt-contact .contact-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 13px;
+  background: #352047;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c084fc;
+  font-size: 21px;
+}
+
+.matt-contact .contact-details {
+  min-width: 0;
+}
+
+.matt-contact .contact-details h5 {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 7px;
+}
+
+.matt-contact .contact-details a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  transition: 0.3s;
+}
+
+.matt-contact .contact-details a:hover {
+  color: #c084fc;
+}
+
+/* AVAILABILITY */
+
+.matt-contact .contact-availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  margin: 25px 0;
+  font-size: 14px;
+}
+
+.matt-contact .availability-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #22c55e;
+}
+
+/* SOCIAL ICONS */
+
+.matt-contact .contact-socials h5 {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.matt-contact .social-icons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.matt-contact .social-icons a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #21182d;
+  color: white;
+  border: 1px solid #443355;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.matt-contact .social-icons a:hover {
+  background: #9333ea;
+  transform: translateY(-5px);
+}
+
+/* CONTACT FORM */
+
+.matt-contact .contact-form-wrapper {
+  background: #1a1425;
+  border: 1px solid #352742;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.matt-contact .form-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.matt-contact .form-header-icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #9333ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.matt-contact .form-header h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.matt-contact .form-header p {
+  color: #aaa;
+  margin: 0;
+  font-size: 13px;
+}
+
+.matt-contact .form-label {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.matt-contact .contact-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #100c19;
+  border: 1px solid #40304f;
+  border-radius: 11px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.matt-contact .contact-input:focus-within {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168,85,247,0.12);
+}
+
+.matt-contact .contact-input i {
+  color: #a855f7;
+  font-size: 15px;
+}
+
+.matt-contact .contact-input input,
+.matt-contact .contact-input textarea {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.matt-contact .contact-input input::placeholder,
+.matt-contact .contact-input textarea::placeholder {
+  color: #777;
+}
+
+.matt-contact .textarea-box {
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.matt-contact .textarea-box i {
+  margin-top: 15px;
+}
+
+.matt-contact .textarea-box textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* SUBMIT BUTTON */
+
+.matt-contact .contact-submit-btn {
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(135deg,#9333ea,#6b21a8);
+  color: white;
+  border: none;
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.matt-contact .contact-submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(147,51,234,0.3);
+}
+
+.matt-contact .contact-submit-btn i {
+  margin: 0 5px;
+}
+
+.matt-contact .contact-status {
+  font-size: 13px;
+  color: #c084fc;
+  margin: 0;
+}
+
+/* BOTTOM SECTION */
+
+.matt-contact .contact-bottom {
+  margin-top: 60px;
+  padding-top: 35px;
+  border-top: 1px solid #352742;
+}
+
+.matt-contact .contact-bottom p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.matt-contact .contact-bottom p i {
+  color: #a855f7;
+}
+
+.matt-contact .copy-email-btn {
+  padding: 12px 22px;
+  background: transparent;
+  color: #c084fc;
+  border: 1px solid #a855f7;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.matt-contact .copy-email-btn:hover {
+  background: #9333ea;
+  color: white;
+}
+
+.matt-contact .copy-email-btn i {
+  margin-right: 8px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .matt-contact {
+    padding: 60px 0;
+  }
+
+  .matt-contact .contact-form-wrapper {
+    padding: 25px 18px;
+  }
+
+  .matt-contact .form-header h3 {
+    font-size: 19px;
+  }
+
+  .matt-contact .contact-info-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .matt-contact .contact-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+    font-size: 18px;
+  }
+
+  .matt-contact .contact-details a {
+    font-size: 12px;
+  }
+}

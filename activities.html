@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/activity page.css">
+  <link rel="stylesheet" href="boostrap css/bootstrap.min.css">
+  <link rel="stylesheet" href="font/all.min.css">
+</head>
+<body>
+  
+<!-- ===== ACTIVITIES SECTION ===== -->
+
+<section class="matt-activities" id="activities">
+  <div class="container">
+
+    <!-- HEADING -->
+    <div class="text-center mb-5">
+      <p class="activity-subtitle">
+        WHAT I LOVE DOING
+      </p>
+
+      <h2 class="activity-heading">
+        My <span>Activities.</span>
+      </h2>
+
+      <p class="activity-description">
+        Exploring creativity, technology,
+        innovation and personal development
+        through my everyday activities.
+      </p>
+    </div>
+
+    <!-- ACTIVITY SUMMARY -->
+    <div class="row g-4 mb-5">
+
+      <div class="col-md-4">
+        <div class="activity-stat">
+          <i class="fas fa-code"></i>
+          <h3>Development</h3>
+          <p>Building Digital Experiences</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="activity-stat">
+          <i class="fas fa-palette"></i>
+          <h3>Creativity</h3>
+          <p>Exploring Visual Design</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="activity-stat">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Learning</h3>
+          <p>Improving My Skills</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="activity-search mx-auto mb-4">
+      <i class="fas fa-search"></i>
+
+      <input
+        type="search"
+        id="activitySearch"
+        placeholder="Search my activities..."
+        aria-label="Search activities"
+      >
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="activity-filters text-center mb-5">
+
+      <button type="button"
+        class="activity-filter active"
+        data-filter="all">
+        <i class="fas fa-th-large"></i>
+        All
+      </button>
+
+      <button type="button"
+        class="activity-filter"
+        data-filter="development">
+        <i class="fas fa-laptop-code"></i>
+        Development
+      </button>
+
+      <button type="button"
+        class="activity-filter"
+        data-filter="design">
+        <i class="fas fa-paint-brush"></i>
+        Design
+      </button>
+
+      <button type="button"
+        class="activity-filter"
+        data-filter="personal">
+        <i class="fas fa-user"></i>
+        Personal
+      </button>
+
+    </div>
+
+    <!-- ACTIVITY COUNT -->
+    <p class="activity-count mb-4"
+      id="activityCount"
+      aria-live="polite">
+    </p>
+
+    <!-- ACTIVITY CARDS -->
+    <div class="row g-4" id="activityContainer">
+
+      <!-- WEBSITE DEVELOPMENT -->
+      <div class="col-lg-4 col-md-6 activity-item"
+        data-category="development">
+
+        <div class="activity-card">
+
+          <div class="activity-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+
+          <span class="activity-category">
+            Development
+          </span>
+
+          <h3>Website Development</h3>
+
+          <p>
+            Creating responsive, modern and
+            interactive websites using frontend
+            technologies.
+          </p>
+
+          <div class="activity-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+          </div>
+
+          <button type="button"
+            class="activity-details-btn"
+            data-activity="web">
+            View Details
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- JAVASCRIPT -->
+      <div class="col-lg-4 col-md-6 activity-item"
+        data-category="development">
+
+        <div class="activity-card">
+
+          <div class="activity-icon">
+            <i class="fab fa-js"></i>
+          </div>
+
+          <span class="activity-category">
+            Development
+          </span>
+
+          <h3>JavaScript Practice</h3>
+
+          <p>
+            Practising programming, problem-solving,
+            DOM manipulation and interactive
+            application development.
+          </p>
+
+          <div class="activity-tags">
+            <span>JavaScript</span>
+            <span>DOM</span>
+            <span>Logic</span>
+          </div>
+
+          <button type="button"
+            class="activity-details-btn"
+            data-activity="javascript">
+            View Details
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- GRAPHIC DESIGN -->
+      <div class="col-lg-4 col-md-6 activity-item"
+        data-category="design">
+
+        <div class="activity-card">
+
+          <div class="activity-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+
+          <span class="activity-category">
+            Creative Design
+          </span>
+
+          <h3>Graphic Design</h3>
+
+          <p>
+            Designing logos, promotional flyers,
+            brand identities and creative
+            digital artwork.
+          </p>
+
+          <div class="activity-tags">
+            <span>CorelDRAW</span>
+            <span>Photoshop</span>
+            <span>Branding</span>
+          </div>
+
+          <button type="button"
+            class="activity-details-btn"
+            data-activity="graphics">
+            View Details
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- PHOTO EDITING -->
+      <div class="col-lg-4 col-md-6 activity-item"
+        data-category="design">
+
+        <div class="activity-card">
+
+          <div class="activity-icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+
+          <span class="activity-category">
+            Creative Design
+          </span>
+
+          <h3>Photo Editing</h3>
+
+          <p>
+            Enhancing photographs through
+            retouching, colour correction,
+            image manipulation and composition.
+          </p>
+
+          <div class="activity-tags">
+            <span>Retouching</span>
+            <span>Editing</span>
+            <span>Creativity</span>
+          </div>
+
+          <button type="button"
+            class="activity-details-btn"
+            data-activity="photo">
+            View Details
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- CONTINUOUS LEARNING -->
+      <div class="col-lg-4 col-md-6 activity-item"
+        data-category="personal">
+
+        <div class="activity-card">
+
+          <div class="activity-icon">
+            <i class="fas fa-book-reader"></i>
+          </div>
+
+          <span class="activity-category">
+            Personal Growth
+          </span>
+
+          <h3>Continuous Learning</h3>
+
+          <p>
+            Exploring new technologies,
+            learning creative techniques
+            and improving professional skills.
+          </p>
+
+          <div class="activity-tags">
+            <span>Research</span>
+            <span>Learning</span>
+            <span>Growth</span>
+          </div>
+
+          <button type="button"
+            class="activity-details-btn"
+            data-activity="learning">
+            View Details
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- TEAMWORK -->
+      <div class="col-lg-4 col-md-6 activity-item"
+        data-category="personal">
+
+        <div class="activity-card">
+
+          <div class="activity-icon">
+            <i class="fas fa-users"></i>
+          </div>
+
+          <span class="activity-category">
+            Collaboration
+          </span>
+
+          <h3>Team Collaboration</h3>
+
+          <p>
+            Sharing ideas, working with others
+            and solving problems through
+            creative teamwork.
+          </p>
+
+          <div class="activity-tags">
+            <span>Teamwork</span>
+            <span>Communication</span>
+          </div>
+
+          <button type="button"
+            class="activity-details-btn"
+            data-activity="teamwork">
+            View Details
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- EMPTY RESULTS -->
+    <div class="activity-empty text-center"
+      id="activityEmpty">
+
+      <i class="fas fa-folder-open fa-3x mb-3"></i>
+
+      <h3>No Activities Found</h3>
+
+      <p>Try another search or category.</p>
+
+    </div>
+
+    <!-- LOAD MORE -->
+    <div class="text-center mt-5">
+      <button type="button"
+        id="loadMoreActivities"
+        class="activity-load-btn">
+
+        <i class="fas fa-plus-circle"></i>
+        Load More
+      </button>
+    </div>
+
+    <!-- BOTTOM MESSAGE -->
+    <div class="activity-bottom text-center mt-5">
+
+      <i class="fas fa-rocket"></i>
+
+      <h3>Always Exploring New Possibilities</h3>
+
+      <p>
+        Every activity gives me another
+        opportunity to learn, create
+        and improve my abilities.
+      </p>
+
+      <a href="#contact" class="activity-contact-btn">
+        <i class="fas fa-envelope"></i>
+        Let's Collaborate
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== ACTIVITY DETAILS MODAL ===== -->
+
+<div class="modal fade" id="activityDetailsModal"
+  tabindex="-1"
+  aria-labelledby="activityModalTitle"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content activity-modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="activityModalTitle">
+          Activity Details
+        </h5>
+
+        <button type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+
+      </div>
+
+      <div class="modal-body text-center">
+
+        <div class="activity-modal-icon">
+          <i class="fas fa-star"
+            id="activityModalIcon"></i>
+        </div>
+
+        <h3 id="activityModalHeading">
+          Activity
+        </h3>
+
+        <p id="activityModalDescription">
+          Activity information appears here.
+        </p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button"
+          class="activity-modal-close"
+          data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== INLINE JAVASCRIPT ===== -->
+<!-- Place this script near the end of your body,
+     after the offline Bootstrap bundle. -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const activitySection =
+    document.getElementById("activities");
+
+  const buttons =
+    activitySection.querySelectorAll(".activity-filter");
+
+  const cards =
+    Array.from(
+      activitySection.querySelectorAll(".activity-item")
+    );
+
+  const searchInput =
+    document.getElementById("activitySearch");
+
+  const emptyMessage =
+    document.getElementById("activityEmpty");
+
+  const count =
+    document.getElementById("activityCount");
+
+  const loadMore =
+    document.getElementById("loadMoreActivities");
+
+  let selectedCategory = "all";
+  let visibleLimit = 3;
+
+
+  // ===== SEARCH + FILTER =====
+
+  function updateActivities() {
+
+    const searchText =
+      searchInput.value.toLowerCase().trim();
+
+    const matches = cards.filter(function(card) {
+
+      const category = card.dataset.category;
+
+      const text = card.textContent.toLowerCase();
+
+      return (
+        (selectedCategory === "all" ||
+          selectedCategory === category) &&
+        text.includes(searchText)
+      );
+
+    });
+
+    cards.forEach(function(card) {
+      card.style.display = "none";
+    });
+
+    matches.slice(0, visibleLimit)
+      .forEach(function(card) {
+        card.style.display = "";
+      });
+
+    const shown = Math.min(matches.length, visibleLimit);
+
+    count.textContent =
+      "Showing " + shown + " of " +
+      matches.length + " activities";
+
+    emptyMessage.style.display =
+      matches.length === 0 ? "block" : "none";
+
+    loadMore.style.display =
+      matches.length > visibleLimit
+        ? "inline-block"
+        : "none";
+  }
+
+
+  // ===== CATEGORY FILTER =====
+
+  buttons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+      buttons.forEach(function(btn) {
+        btn.classList.remove("active");
+      });
+
+      this.classList.add("active");
+
+      selectedCategory = this.dataset.filter;
+
+      visibleLimit = 3;
+
+      updateActivities();
+
+    });
+
+  });
+
+
+  // ===== SEARCH INPUT =====
+
+  searchInput.addEventListener("input", function() {
+    visibleLimit = 3;
+    updateActivities();
+  });
+
+
+  // ===== LOAD MORE =====
+
+  loadMore.addEventListener("click", function() {
+    visibleLimit += 3;
+    updateActivities();
+  });
+
+
+  // ===== ACTIVITY DETAILS =====
+
+  const activityData = {
+
+    web: {
+      title: "Website Development",
+      icon: "fas fa-laptop-code",
+      description:
+        "Creating responsive websites using HTML, CSS, " +
+        "Bootstrap and JavaScript, with a focus on " +
+        "attractive layouts and user-friendly interfaces."
+    },
+
+    javascript: {
+      title: "JavaScript Practice",
+      icon: "fab fa-js",
+      description:
+        "Practising JavaScript through functions, " +
+        "arrays, loops, DOM manipulation, events " +
+        "and interactive applications."
+    },
+
+    graphics: {
+      title: "Graphic Design",
+      icon: "fas fa-palette",
+      description:
+        "Creating logos, flyers, posters, brand " +
+        "identities and promotional designs using " +
+        "creative graphic design techniques."
+    },
+
+    photo: {
+      title: "Photo Editing",
+      icon: "fas fa-camera-retro",
+      description:
+        "Editing and enhancing photographs through " +
+        "colour correction, retouching and creative " +
+        "image compositions."
+    },
+
+    learning: {
+      title: "Continuous Learning",
+      icon: "fas fa-book-reader",
+      description:
+        "Exploring technology, researching new ideas " +
+        "and improving personal and professional skills."
+    },
+
+    teamwork: {
+      title: "Team Collaboration",
+      icon: "fas fa-users",
+      description:
+        "Working with others, sharing creative ideas " +
+        "and developing solutions through teamwork."
+    }
+
+  };
+
+
+  // ===== BOOTSTRAP MODAL =====
+
+  const modalElement =
+    document.getElementById("activityDetailsModal");
+
+  const modal = bootstrap.Modal.getOrCreateInstance(
+    modalElement
+  );
+
+  document.querySelectorAll(".activity-details-btn")
+    .forEach(function(button) {
+
+      button.addEventListener("click", function() {
+
+        const details =
+          activityData[this.dataset.activity];
+
+        if (!details) return;
+
+        document.getElementById("activityModalTitle")
+          .textContent = details.title;
+
+        document.getElementById("activityModalHeading")
+          .textContent = details.title;
+
+        document.getElementById("activityModalDescription")
+          .textContent = details.description;
+
+        document.getElementById("activityModalIcon")
+          .className = details.icon;
+
+        modal.show();
+
+      });
+
+    });
+
+
+  // INITIAL DISPLAY
+  updateActivities();
+
+});
+</script>
+
+</body>
+</html>
